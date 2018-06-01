@@ -1,0 +1,29 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+
+
+<script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+
+
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs='sourceType: webcam;'>
+ 
+    <a-anchor hit-testing-enabled="true">
+
+
+    	<a-gltf-model src="https://cdn.rawgit.com/jazheelcohleen/WWL/master/test.gltf" 
+    	scale="1 1 1" 
+    	position="0 1 0"
+    	rotation="90"
+    	animation-mixer="loop:repeat">
+    	</a-gltf-model>
+      
+	</a-anchor>
+	<a-camera-static/>
+  </a-scene>
+</body>
+</html>
